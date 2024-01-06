@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "590650390024",
+    "firebase_url": "https://mysignuppage-d7bdd-default-rtdb.firebaseio.com",
+    "project_id": "mysignuppage-d7bdd",
+    "storage_bucket": "mysignuppage-d7bdd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590650390024:android:e1680f9d62b2379f70c3bd",
+        "android_client_info": {
+          "package_name": "com.example.signuppagewithdatabse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6QDPNb7vX8OkfHrPPj788tgSDc_FuMNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
