@@ -1,9 +1,11 @@
 package com.example.signuppagewithdatabse
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val emailInput = findViewById<EditText>(R.id.email)
         val passInput = findViewById<EditText>(R.id.password)
         val signUpbtn = findViewById<Button>(R.id.button)
+        val signInText = findViewById<TextView>(R.id.alreadySignedIn)
 
         signUpbtn.setOnClickListener {
             val name = nameInput.text.toString()
@@ -35,6 +38,11 @@ class MainActivity : AppCompatActivity() {
             }.addOnFailureListener {
                 Toast.makeText(this, "failed to register user", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        signInText.setOnClickListener {
+            val intent = Intent(this@MainActivity, SignInpage::class.java)
+            startActivity(intent)
         }
     }
 }
